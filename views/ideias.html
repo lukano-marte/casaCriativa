@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Ideias</title>
+</head>
+<body id="page-ideias">
+
+    <div id="container">
+        <header>
+            <a href="/">
+                <img src="./logo.png" alt="Logo Casa Criativa">
+            </a>
+            <nav>
+                <li><a href="/">Início</a></li>
+                <li><a href="#" class="button" onclick="onOff()">Nova Ideia</a></li>
+            </nav>
+        </header>
+        
+        <section id="title">
+            <p>Em exibição</p>
+            <h1>Ideias</h1>
+        </section>
+            <main>
+                <div id="ideias">
+
+                    {% include "conteudoIdeias.html" %}
+
+                </div>    
+            </main>
+
+            <footer id="footer">
+                Com S2 <a href="https://github.com/lukano-marte" target="_blank">Lukano</a>
+            </footer>
+    </div>
+    
+    {% include "modal.html" %}
+
+    <script src="/script.js"></script>
+</body>
+</html>

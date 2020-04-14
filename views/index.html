@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Casa Criativa</title>
+</head>
+<body>
+    <div id="container">
+        <section id="intro">
+            <header>
+                <a href="/">
+                    <img src="/logo.png" alt="Logo Casa Criativa">
+                </a>
+            </header>
+            
+            <main>
+                <p>
+                    Ficar em casa em períodos longos, 
+                    não deve ser nada fácil.
+                </p>
+                
+                <p>
+                    Por isso, iremos catalogar ideias, 
+                    <strong>brincadeiras, jogos, filmes,
+                    livros, cursos, dicas </strong> e 
+                    tudo que for necessário 
+                    para tornar esse momento mais interessante.
+                </p>
+                    
+                <p>
+                    Comece clicando em ver ideias para ver 
+                    as ideias cadastradas e contribua 
+                    adicionando a sua ideia.
+                </p>
+                    <div id="buttons">
+                        <button onclick="onOff()"> + Adicionar Ideia </button>
+                        <a href="/ideias" class="button">Ver Ideias</a>
+                    </div>
+
+                    <footer id="footer">
+                        Com S2 <a href="https://github.com/lukano-marte" target="_blank">Lukano</a>
+                    </footer>  
+            </main>
+        </section>
+        
+            <div id="last-ideas">
+
+                {% include "conteudoIdeias.html" %}
+
+        </div>
+
+        {% include "modal.html" %}
+        
+<script src="/script.js"></script>
+</body>
+</html>
